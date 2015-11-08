@@ -1,0 +1,23 @@
+# bytecode
+
+*.class
+
+# logs
+
+*.log
+
+# sbt specific
+
+.cache
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/target
+project/project
+project/plugins/project/
+
+# IntelliJ specific
+.idea
