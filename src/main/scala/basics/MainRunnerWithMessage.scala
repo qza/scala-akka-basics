@@ -1,4 +1,4 @@
-package simple
+package basics
 
 /**
   * Runs main method and prints message
