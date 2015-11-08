@@ -12,7 +12,6 @@ import scala.annotation.tailrec
   */
 object Factorial extends App {
 
-
   def factorial(x: Int): Int = {
     if (x == 1) x else x * factorial(x - 1) // stack overflow: not last action - after factorial x is multiplied
   }
@@ -26,6 +25,7 @@ object Factorial extends App {
 
     accumulate(1, x)
   }
+
 
   println(factorial(4))
 
