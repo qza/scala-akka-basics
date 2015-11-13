@@ -31,6 +31,8 @@ object BasicModel extends App {
   class Rational(x: Int, y: Int) {
     // primary constructor
 
+    require(y > 0, "denominator must not be equal to zero")
+
     def numer = x
 
     def denom = y
@@ -47,8 +49,6 @@ object BasicModel extends App {
 
     def div(other: Rational) = new Rational(numer * other.denom, denom * other.numer)
 
-    def gcd(x: Int, y: Int): Int = if (y == 0) x else gcd(y, x % y) // greatest common divider
-
     def less(other: Rational) = numer * other.denom < other.numer * denom
 
     def max(other: Rational) = if (other.less(this)) this else other
@@ -57,6 +57,12 @@ object BasicModel extends App {
       val g = abs(gcd(numer, denom)) // precomputed value
       (numer / g) + "/" + (denom / g)
     }
+
+    /*
+     * Private methods
+     */
+
+    private def gcd(x: Int, y: Int): Int = if (y == 0) x else gcd(y, x % y) // greatest common divider
 
   }
 
