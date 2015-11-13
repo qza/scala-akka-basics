@@ -4,6 +4,8 @@ import java.util.NoSuchElementException
 
 /**
   * Demonstrates usage of generics ~ type parameters, other form of polymorphism
+  *
+  * @tparam T
   */
 trait GenericList[T] {
 
