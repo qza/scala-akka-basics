@@ -2,6 +2,8 @@ package model
 
 /**
   * Abstract class Natural representing non-negative integers (Piano numbers)
+  *
+  * Demonstrates usual object decomposition which is suitable in ever evolving model hierarchies
   */
 abstract class NaturalAbstract {
 

@@ -36,7 +36,7 @@ case class Number(n: Int) extends Expression
 
 case class Sum(left: Expression, right: Expression) extends Expression
 
-// scala compiler adds apply method to case classes (factory method) - Number(1)
+// scala compiler adds apply method to case classes (factory method) -> Number(1)
 
 
 object ExpressionRunner extends App {
