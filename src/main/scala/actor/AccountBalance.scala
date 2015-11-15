@@ -109,8 +109,8 @@ class AccountBalanceResponseHandler(savingAccountsProxy: ActorRef,
   def collectBalances = (checkingBalances, savingsBalances) match {
     case (Some(c), Some(s)) =>
       log.debug(s"received all balances")
-      respondAndShutdown(AccountBalances(checkingBalances, savingsBalances))
       scheduledTimeout.cancel
+      respondAndShutdown(AccountBalances(checkingBalances, savingsBalances))
     case _ =>
   }
 
