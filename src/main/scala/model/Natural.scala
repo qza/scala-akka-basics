@@ -5,8 +5,8 @@ package model
   *
   * Demonstrates usual object decomposition which is suitable in ever evolving model hierarchies
   *
-  * As other object oriented languages, Scala implements dynamic binding (dynamic method dispatch)
-  * (code that is executed depends on the runtime of type instance
+  * As other object oriented languages, Scala implements dynamic binding (dynamic method dispatch -
+  * code that is executed depends on the runtime of type instance)
   */
 abstract class NaturalAbstract {
 

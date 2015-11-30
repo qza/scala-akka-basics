@@ -1,3 +1,6 @@
-# scala-akka-basics
-Collection of examples and notes made during course:
-Introduction to FP in Scala on Coursera
+# scala & akka basics
+
+- introduction to fp in scala on coursera
+
+- introduction to akka
+
